@@ -1,0 +1,62 @@
+# --- OS / filesystem ---
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Logs ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- Dependencies ---
+node_modules/
+
+# --- Env / secrets (don’t commit) ---
+.env
+.env.*
+!.env.example
+
+# --- TypeScript / build caches ---
+*.tsbuildinfo
+
+# --- Build outputs (customize to your setup) ---
+dist/
+build/
+out/
+.release/
+web-ext-artifacts/
+
+# --- Bundler / tool caches ---
+.cache/
+.parcel-cache/
+.vite/
+.vite-cache/
+.eslintcache
+.stylelintcache
+.turbo/
+.vercel/
+.netlify/
+
+# --- Testing / coverage ---
+coverage/
+
+# --- Extension packaging (if you export zips) ---
+*.zip
+*.crx
+
+# --- Misc ---
+*.tmp
+*.temp
