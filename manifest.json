@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Conceptual Definitions",
+  "version": "0.1.0",
+  "description": "Highlight text, hold Shift, and see conceptual definitions powered by OpenAI.",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://api.openai.com/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["tooltip.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {},
+  "action": {
+    "default_title": "Conceptual Definitions"
+  }
+}
+
